@@ -1,0 +1,773 @@
+<?xml version="1.0" encoding="utf-8"?><!--Title-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  tools:context="com.example.android.originsoffoodnames.QuizActivity">
+
+  <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/food_2879202_1920"
+    android:fillViewport="true"
+    tools:context="com.example.android.originsoffoodnames.QuizActivity">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:tools="http://schemas.android.com/tools"
+      android:id="@+id/main_section"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:focusable="true"
+      android:focusableInTouchMode="true"
+      tools:context="com.example.android.originsoffoodnames.QuizActivity">
+
+      <View
+        android:id="@+id/dummy_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height"
+        android:gravity="center" />
+
+      <!--Subtitle-->
+      <View
+        android:id="@+id/dummy_subtitle"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/subtitle_height"
+        android:layout_below="@+id/dummy_title"
+        android:gravity="center" />
+
+      <!--Question 1-->
+      <LinearLayout
+        android:id="@+id/q1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dummy_subtitle"
+        android:orientation="vertical">
+        <RelativeLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content">
+          <!--Question #-->
+          <TextView
+            android:id="@+id/q1_question_number"
+            style="@style/QuestionNumberStyle"
+            android:text="@string/question_number_q1" />
+          <!--Food name-->
+          <TextView
+            android:id="@+id/q1_question_desc"
+            style="@style/QuestionStatementStyle"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/q1_question_number"
+            android:text="@string/question_1" />
+        </RelativeLayout>
+        <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="@dimen/answer_options_height"
+          android:orientation="horizontal">
+          <!--Food image-->
+          <ImageView
+            style="@style/FoodImageStyle"
+            android:src="@drawable/mango_1176541_1280" />
+          <!--Food name & answer options-->
+          <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:orientation="vertical">
+            <!--Answer options-->
+            <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/q1_options"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+              <!--Option 1-->
+              <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="@string/q1_option1" />
+              <!--Option 2-->
+              <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="@string/q1_option2" />
+              <!--Option 3-->
+              <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="@string/q1_option3" />
+              <!--Option 4-->
+              <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="@string/q1_option4" />
+            </RadioGroup>
+          </LinearLayout>
+        </LinearLayout>
+      </LinearLayout>
+
+      <!--Question 2-->
+      <LinearLayout
+        android:id="@+id/q2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/q1"
+        android:orientation="vertical">
+        <RelativeLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content">
+          <!--Question #-->
+          <TextView
+            android:id="@+id/q2_question_number"
+            style="@style/QuestionNumberStyle"
+            android:text="@string/question_number_q2" />
+          <!--Food name-->
+          <TextView
+            android:id="@+id/q2_question_desc"
+            style="@style/QuestionStatementStyle"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/q2_question_number"
+            android:text="@string/question_2" />
+        </RelativeLayout>
+        <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="@dimen/answer_options_height"
+          android:orientation="horizontal">
+          <!--Food image-->
+          <ImageView
+            style="@style/FoodImageStyle"
+            android:src="@drawable/coffee_beans_2105199_1280" />
+          <!--Food name & answer options-->
+          <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:orientation="vertical">
+            <!--Answer options-->
+            <!--Option 1-->
+            <CheckBox
+              android:id="@+id/q2_option1"
+              android:layout_width="wrap_content"
+              android:layout_height="0dp"
+              android:layout_weight="1"
+              android:text="@string/q2_option1" />
+            <!--Option 2-->
+            <CheckBox
+              android:id="@+id/q2_option2"
+              android:layout_width="wrap_content"
+              android:layout_height="0dp"
+              android:layout_weight="1"
+              android:text="@string/q2_option2" />
+            <!--Option 3-->
+            <CheckBox
+              android:id="@+id/q2_option3"
+              android:layout_width="wrap_content"
+              android:layout_height="0dp"
+              android:layout_weight="1"
+              android:text="@string/q2_option3" />
+            <!--Option 4-->
+            <CheckBox
+              android:id="@+id/q2_option4"
+              android:layout_width="wrap_content"
+              android:layout_height="0dp"
+              android:layout_weight="1"
+              android:text="@string/q2_option4" />
+          </LinearLayout>
+
+        </LinearLayout>
+
+      </LinearLayout>
+
+      <!--Question 3-->
+      <LinearLayout
+        android:id="@+id/q3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/q2"
+        android:orientation="vertical">
+        <RelativeLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_gravity="top">
+          <!--Question #-->
+          <TextView
+            android:id="@+id/q3_question_number"
+            style="@style/QuestionNumberStyle"
+            android:text="@string/question_number_q3" />
+          <!--Food name-->
+          <TextView
+            android:id="@+id/q3_question_desc"
+            style="@style/QuestionStatementStyle"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/q3_question_number"
+            android:text="@string/question_3" />
+        </RelativeLayout>
+        <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="@dimen/answer_options_height"
+          android:orientation="horizontal">
+          <!--Food image-->
+          <ImageView
+            style="@style/FoodImageStyle"
+            android:src="@drawable/basil_583816_1280" />
+          <!--Food name & answer options-->
+          <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:gravity="center"
+            android:orientation="vertical">
+            <!--Answer options-->
+            <EditText
+              android:id="@+id/q3_answer_entry"
+              style="@style/EditTextFieldStyle" />
+          </LinearLayout>
+
+        </LinearLayout>
+
+      </LinearLayout>
+
+      <!--Question 4-->
+      <LinearLayout
+        android:id="@+id/q4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/q3"
+        android:orientation="vertical">
+        <RelativeLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content">
+          <!--Question #-->
+          <TextView
+            android:id="@+id/q4_question_number"
+            style="@style/QuestionNumberStyle"
+            android:text="@string/question_number_q4" />
+          <!--Food name-->
+          <TextView
+            android:id="@+id/q4_question_desc"
+            style="@style/QuestionStatementStyle"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/q4_question_number"
+            android:text="@string/question_4" />
+        </RelativeLayout>
+        <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="@dimen/answer_options_height"
+          android:orientation="horizontal">
+          <!--Food image-->
+          <ImageView
+            style="@style/FoodImageStyle"
+            android:src="@drawable/onions_1397037_1280" />
+          <!--Food name & answer options-->
+          <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:orientation="vertical">
+            <!--Answer options-->
+            <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/q4_options"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+              <!--Option 1-->
+              <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="@string/q4_option1" />
+              <!--Option 2-->
+              <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="@string/q4_option2" />
+              <!--Option 3-->
+              <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="@string/q4_option3" />
+              <!--Option 4-->
+              <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="@string/q4_option4" />
+            </RadioGroup>
+
+
+          </LinearLayout>
+
+        </LinearLayout>
+
+      </LinearLayout>
+
+      <!--Question 5-->
+      <LinearLayout
+        android:id="@+id/q5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/q4"
+        android:orientation="vertical">
+        <RelativeLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content">
+          <!--Question #-->
+          <TextView
+            android:id="@+id/q5_question_number"
+            style="@style/QuestionNumberStyle"
+            android:text="@string/question_number_q5" />
+          <!--Food name-->
+          <TextView
+            android:id="@+id/q5_question_desc"
+            style="@style/QuestionStatementStyle"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/q5_question_number"
+            android:text="@string/question_5" />
+        </RelativeLayout>
+        <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="@dimen/answer_options_height"
+          android:orientation="horizontal">
+          <!--Food image-->
+          <ImageView
+            style="@style/FoodImageStyle"
+            android:src="@drawable/zucchini_1630518_1280" />
+          <!--Food name & answer options-->
+          <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:gravity="center"
+            android:orientation="vertical">
+            <!--Answer options-->
+            <EditText
+              android:id="@+id/q5_answer_entry"
+              style="@style/EditTextFieldStyle" />
+          </LinearLayout>
+
+        </LinearLayout>
+
+      </LinearLayout>
+
+      <!--Question 6-->
+      <LinearLayout
+        android:id="@+id/q6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/q5"
+        android:orientation="vertical">
+        <RelativeLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content">
+          <!--Question #-->
+          <TextView
+            android:id="@+id/q6_question_number"
+            style="@style/QuestionNumberStyle"
+            android:text="@string/question_number_q6" />
+          <!--Food name-->
+          <TextView
+            android:id="@+id/q6_question_desc"
+            style="@style/QuestionStatementStyle"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/q6_question_number"
+            android:text="@string/question_6" />
+        </RelativeLayout>
+        <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="@dimen/answer_options_height"
+          android:orientation="horizontal">
+          <!--Food image-->
+          <ImageView
+            style="@style/FoodImageStyle"
+            android:src="@drawable/tomatoes_2559809_1280" />
+          <!--Food name & answer options-->
+          <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:orientation="vertical">
+            <!--Answer options-->
+            <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/q6_options"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+              <!--Option 1-->
+              <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="@string/q6_option1" />
+              <!--Option 2-->
+              <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="@string/q6_option2" />
+              <!--Option 3-->
+              <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="@string/q6_option3" />
+              <!--Option 4-->
+              <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="@string/q6_option4" />
+            </RadioGroup>
+
+
+          </LinearLayout>
+
+        </LinearLayout>
+
+      </LinearLayout>
+
+      <!--Question 7-->
+      <LinearLayout
+        android:id="@+id/q7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/q6"
+        android:orientation="vertical">
+        <RelativeLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content">
+          <!--Question #-->
+          <TextView
+            android:id="@+id/q7_question_number"
+            style="@style/QuestionNumberStyle"
+            android:text="@string/question_number_q7" />
+          <!--Food name-->
+          <TextView
+            android:id="@+id/q7_question_desc"
+            style="@style/QuestionStatementStyle"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/q7_question_number"
+            android:text="@string/question_7" />
+        </RelativeLayout>
+        <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="@dimen/answer_options_height"
+          android:orientation="horizontal">
+          <!--Food image-->
+          <ImageView
+            style="@style/FoodImageStyle"
+            android:src="@drawable/cashew_2197621_1280" />
+          <!--Food name & answer options-->
+          <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:orientation="vertical">
+            <!--Answer options-->
+            <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/q7_options"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+              <!--Option 1-->
+              <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="@string/q7_option1" />
+              <!--Option 2-->
+              <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="@string/q7_option2" />
+              <!--Option 3-->
+              <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="@string/q7_option3" />
+              <!--Option 4-->
+              <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="@string/q7_option4" />
+            </RadioGroup>
+
+
+          </LinearLayout>
+
+        </LinearLayout>
+
+      </LinearLayout>
+
+      <!--Question 8-->
+      <LinearLayout
+        android:id="@+id/q8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/q7"
+        android:orientation="vertical">
+        <RelativeLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content">
+          <!--Question #-->
+          <TextView
+            android:id="@+id/q8_question_number"
+            style="@style/QuestionNumberStyle"
+            android:text="@string/question_number_q8" />
+          <!--Food name-->
+          <TextView
+            android:id="@+id/q8_question_desc"
+            style="@style/QuestionStatementStyle"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/q8_question_number"
+            android:text="@string/question_8" />
+        </RelativeLayout>
+        <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="@dimen/answer_options_height"
+          android:orientation="horizontal">
+          <!--Food image-->
+          <ImageView
+            style="@style/FoodImageStyle"
+            android:src="@drawable/cheese_567367_1280" />
+          <!--Food name & answer options-->
+          <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:orientation="vertical">
+            <!--Answer options-->
+            <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/q8_options"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+              <!--Option 1-->
+              <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="@string/q8_option1" />
+              <!--Option 2-->
+              <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="@string/q8_option2" />
+              <!--Option 3-->
+              <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="@string/q8_option3" />
+              <!--Option 4-->
+              <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="@string/q8_option4" />
+            </RadioGroup>
+
+
+          </LinearLayout>
+
+        </LinearLayout>
+
+      </LinearLayout>
+
+      <!--Question 9-->
+      <LinearLayout
+        android:id="@+id/q9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/q8"
+        android:orientation="vertical">
+        <RelativeLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content">
+          <!--Question #-->
+          <TextView
+            android:id="@+id/q9_question_number"
+            style="@style/QuestionNumberStyle"
+            android:text="@string/question_number_q9" />
+          <!--Food name-->
+          <TextView
+            android:id="@+id/q9_question_desc"
+            style="@style/QuestionStatementStyle"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/q9_question_number"
+            android:text="@string/question_9" />
+        </RelativeLayout>
+        <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="@dimen/answer_options_height"
+          android:orientation="horizontal">
+          <!--Food image-->
+          <ImageView
+            style="@style/FoodImageStyle"
+            android:src="@drawable/australian_1152861_1280" />
+          <!--Food name & answer options-->
+          <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:gravity="center"
+            android:orientation="vertical">
+            <!--Answer options-->
+            <EditText
+              android:id="@+id/q9_answer_entry"
+              style="@style/EditTextFieldStyle" />
+          </LinearLayout>
+
+        </LinearLayout>
+
+      </LinearLayout>
+
+      <!--Question 10-->
+      <LinearLayout
+        android:id="@+id/q10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/q9"
+        android:orientation="vertical">
+        <RelativeLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content">
+          <!--Question #-->
+          <TextView
+            android:id="@+id/q10_question_number"
+            style="@style/QuestionNumberStyle"
+            android:text="@string/question_number_q10" />
+          <!--Food name-->
+          <TextView
+            android:id="@+id/q10_question_desc"
+            style="@style/QuestionStatementStyle"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/q10_question_number"
+            android:text="@string/question_10" />
+        </RelativeLayout>
+        <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="@dimen/answer_options_height"
+          android:orientation="horizontal">
+          <!--Food image-->
+          <ImageView
+            style="@style/FoodImageStyle"
+            android:src="@drawable/spinach_2310134_1280" />
+          <!--Food name & answer options-->
+          <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:orientation="vertical">
+            <!--Answer options-->
+            <!--Option 1-->
+            <CheckBox
+              android:id="@+id/q10_option1"
+              android:layout_width="wrap_content"
+              android:layout_height="0dp"
+              android:layout_weight="1"
+              android:text="@string/q10_option1" />
+            <!--Option 2-->
+            <CheckBox
+              android:id="@+id/q10_option2"
+              android:layout_width="wrap_content"
+              android:layout_height="0dp"
+              android:layout_weight="1"
+              android:text="@string/q10_option2" />
+            <!--Option 3-->
+            <CheckBox
+              android:id="@+id/q10_option3"
+              android:layout_width="wrap_content"
+              android:layout_height="0dp"
+              android:layout_weight="1"
+              android:text="@string/q10_option3" />
+            <!--Option 4-->
+            <CheckBox
+              android:id="@+id/q10_option4"
+              android:layout_width="wrap_content"
+              android:layout_height="0dp"
+              android:layout_weight="1"
+              android:text="@string/q10_option4" />
+          </LinearLayout>
+
+        </LinearLayout>
+
+      </LinearLayout>
+
+      <LinearLayout
+        android:id="@+id/scores_and_results"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/q10"
+        android:orientation="horizontal">
+        <!--Check Score-->
+        <Button
+          android:id="@+id/check_score"
+          style="@style/ButtonStyle"
+          android:layout_width="0dp"
+          android:layout_height="match_parent"
+          android:layout_weight="1"
+          android:onClick="checkScore"
+          android:text="@string/check_score" />
+        <!--View Detailed Results-->
+        <Button
+          android:id="@+id/view_results"
+          style="@style/ButtonStyle"
+          android:layout_width="0dp"
+          android:layout_height="match_parent"
+          android:layout_weight="1"
+          android:onClick="viewResults"
+          android:text="@string/view_results" />
+      </LinearLayout>
+      <!--Reset Answers-->
+      <Button
+        android:id="@+id/reset_answers"
+        style="@style/ButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/scores_and_results"
+        android:layout_centerHorizontal="true"
+        android:onClick="resetAnswers"
+        android:text="@string/reset_answers" />
+    </RelativeLayout>
+
+  </ScrollView>
+
+  <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:alpha="0.85"
+    android:background="@android:color/white"
+    android:elevation="@dimen/title_bar_shadow_height"
+    android:shadowDy="10.0">
+    <TextView
+      android:id="@+id/title"
+      android:layout_width="match_parent"
+      android:layout_height="@dimen/title_height"
+      android:background="@color/colorPrimaryDark"
+      android:fontFamily="@font/volkhov_bold"
+      android:gravity="center"
+      android:text="@string/title"
+      android:textColor="@color/colorPrimary"
+      android:textSize="@dimen/title_font_size" />
+
+    <!--Subtitle-->
+    <TextView
+      android:id="@+id/subtitle"
+      android:layout_width="match_parent"
+      android:layout_height="@dimen/subtitle_height"
+      android:layout_below="@+id/title"
+      android:background="@color/colorPrimaryDark"
+      android:gravity="center"
+      android:text="@string/subtitle_quiz"
+      android:textColor="@color/colorPrimary"
+      android:textSize="@dimen/subtitle_font_size" />
+  </RelativeLayout>
+</RelativeLayout>

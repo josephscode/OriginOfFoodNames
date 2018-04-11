@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?><!--Title-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:id="@+id/main_section"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:paddingStart="@dimen/welcome_left_margin"
+  android:paddingEnd="@dimen/welcome_right_margin"
+  android:background="#010101"
+  tools:context="com.example.android.originsoffoodnames.MainActivity">
+
+  <ImageView
+    android:layout_width="@dimen/welcome_image_width"
+    android:layout_height="@dimen/welcome_image_height"
+    android:layout_alignParentBottom="true"
+    android:contentDescription="@string/content_description_welcome_screen"
+    android:scaleType="centerCrop"
+    android:src="@drawable/vegetable_2924245_1280" />
+  <TextView
+    android:id="@+id/title"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/welcome_margin_between_sections"
+    android:gravity="center_horizontal"
+    android:maxLines="1"
+    android:text="@string/food_etymology_quiz"
+    android:textSize="@dimen/title_font_size" />
+  <!--TextView
+    android:id="@+id/subtitle"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/welcome_margin_between_sections"
+    android:layout_below="@+id/title"
+    android:fontFamily="@font/volkhov_bold"
+    android:gravity="center_horizontal"
+    android:text="@string/subtitle_welcome_screen"
+    android:textSize="@dimen/welcome_margin_between_sections" /-->
+  <TextView
+    android:id="@+id/introduction"
+    android:textStyle="italic"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/welcome_margin_between_sections"
+    android:layout_below="@+id/title"
+    android:gravity="center_horizontal"
+    android:text="@string/introduction"
+    android:textSize="@dimen/subtitle_font_size" />
+  <EditText
+    android:id="@+id/user_name"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/welcome_margin_between_sections"
+    android:layout_below="@+id/introduction"
+    android:gravity="center_horizontal"
+    android:hint="@string/your_name"
+    android:maxLength="15"
+    android:maxLines="1"
+    android:textSize="@dimen/subtitle_font_size" />
+  <Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/welcome_margin_between_sections"
+    android:layout_alignParentEnd="true"
+    android:layout_below="@+id/user_name"
+    android:onClick="startQuiz"
+    android:text="@string/start"
+    android:textAllCaps="true" />
+</RelativeLayout>

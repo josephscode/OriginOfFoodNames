@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <dimen name="title_height">50dp</dimen>
+  <dimen name="subtitle_height">28dp</dimen>
+  <dimen name="answer_options_height">112dp</dimen>
+  <dimen name="title_font_size">24sp</dimen>
+  <dimen name="subtitle_font_size">20sp</dimen>
+  <dimen name="welcome_left_margin">16dp</dimen>
+  <dimen name="welcome_right_margin">16dp</dimen>
+  <dimen name="welcome_image_width">300dp</dimen>
+  <dimen name="welcome_image_height">300dp</dimen>
+  <dimen name="welcome_margin_between_sections">34dp</dimen>
+  <dimen name="title_bar_shadow_height">10dp</dimen>
+  <dimen name="results_score_statement_margin">8dp</dimen>
+  <dimen name="results_correct_icon_margin">8dp</dimen>
+  <dimen name="results_image_width">32dp</dimen>
+  <dimen name="results_image_height">32dp</dimen>
+  <dimen name="results_answer_padding">8dp</dimen>
+  <dimen name="medium_text_size">20dp</dimen>
+  <dimen name="margin_8dp">8dp</dimen>
+  <dimen name="edit_text_height">34dp</dimen>
+</resources>
